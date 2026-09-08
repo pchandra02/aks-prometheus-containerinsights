@@ -1,0 +1,10 @@
+{
+  "cluster": { "cluster": { "name": "demo", "status": "ACTIVE", "version": "1.30" }, "nodegroups": ["workers"] },
+  "nodes": [{ "instanceId": "i-0123456789abcdef0", "state": "running", "instanceType": "m5.large" }],
+  "load-balancers": [{ "name": "k8s-demo", "state": "active", "type": "application" }],
+  "logs": { "logGroups": [{ "logGroupName": "/aws/eks/demo/cluster" }], "events": [{ "message": "node became NotReady" }] },
+  "metrics": [{ "label": "clusterfailednodecount", "values": [1], "timestamps": ["2025-01-01T00:00:00Z"] }],
+  "cloudtrail": [{ "eventName": "UpdateNodegroupConfig", "eventTime": "2025-01-01T00:00:00Z" }],
+  "config": ["{\"resourceId\":\"demo\",\"resourceType\":\"AWS::EKS::Cluster\"}"],
+  "health": []
+}
